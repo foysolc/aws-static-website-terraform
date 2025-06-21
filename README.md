@@ -1,4 +1,5 @@
 🚀 Automated Static Website Deployment on AWS with Terraform
+
 This repository contains the Infrastructure as Code (IaC) for deploying a secure, highly-available, and cost-effective static website on Amazon Web Services (AWS) using Terraform.
 
 ✨ Project Overview
@@ -135,7 +136,7 @@ DNS propagation can take up to 48 hours, but often completes within a few hours.
 Upload Website Content to S3:
 Once your AWS infrastructure is set up and Name Servers are updated, upload your static website files to the S3 bucket. Ensure you are in the directory containing your website content (e.g., cd website).
 
-# Make sure you are in the 'website/' directory or adjust the path.
+Make sure you are in the 'website/' directory or adjust the path.
 aws s3 sync . s3://foysol.cloud --delete
 
 
