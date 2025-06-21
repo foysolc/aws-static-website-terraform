@@ -1,10 +1,13 @@
 🚀 Automated Static Website Deployment on AWS with Terraform
+
 This repository contains the Infrastructure as Code (IaC) for deploying a secure, highly-available, and cost-effective static website on Amazon Web Services (AWS) using Terraform.
 
 ✨ Project Overview
+
 This project automates the entire setup for hosting a personal website (like foysol.cloud). Instead of manually configuring services in the AWS console, all infrastructure is defined and managed through Terraform code. This approach ensures consistency, reproducibility, and allows for efficient version control of the cloud environment.
 
 🌟 Key Features & Technologies
+
 Infrastructure as Code (IaC): Defined using Terraform.
 
 Static Website Hosting: Leverages Amazon S3 for durable and scalable storage of website assets.
@@ -20,6 +23,7 @@ Secure Access Control: AWS Identity and Access Management (IAM) used to establis
 Cost-Effective: A serverless architecture minimizes operational overhead and costs.
 
 🌐 Architecture Overview
+
 The diagram below illustrates the flow of a user's request and the AWS services involved in serving the static website:
 
 +-----------+       +-----------+       +-----------------+       +--------------+
@@ -50,6 +54,7 @@ ACM: Provides the SSL/TLS certificate for CloudFront to enable HTTPS encryption.
 IAM: Manages the secure connection between CloudFront and S3.
 
 🚀 Deployment Steps
+
 Follow these steps to deploy your own static website using this Terraform configuration.
 
 Prerequisites
@@ -157,6 +162,7 @@ This will ask for confirmation (yes). Be absolutely sure you want to delete all 
 You may need to manually empty the S3 bucket before terraform destroy can successfully delete it, as Terraform cannot delete a non-empty S3 bucket by default.
 
 📁 Project Structure
+
 .
 ├── main.tf                 # Main Terraform configuration, defining AWS resources.
 ├── variables.tf            # Input variables for domain name, AWS region, etc.
