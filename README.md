@@ -178,36 +178,6 @@ terraform destroy
 
 ---
 
-## 🧠 Key Learnings & Interview Highlights
-
-This project provides hands-on experience with fundamental cloud concepts and tools, making it an excellent talking point for technical interviews:
-
-### Infrastructure as Code (IaC) with Terraform
-
-> "This project demonstrates IaC using Terraform. Instead of manual clicks, I define my entire cloud infrastructure (S3, CloudFront, DNS, etc.) in code. This ensures consistency, enables version control, and allows for rapid, repeatable deployments."
-
-### Security Best Practices
-
-> "My S3 bucket is private. I use a CloudFront Origin Access Identity (OAI) to privately pull content, preventing public access. HTTPS is enforced with a free SSL certificate from ACM, securing data in transit."
-
-### Scalability & Performance (CDN)
-
-> "Amazon CloudFront caches content globally at edge locations, ensuring fast load times and automatic scalability for high traffic volumes."
-
-### DNS Management & Region Nuances
-
-> "I managed custom domain DNS using Route 53, and handled a key AWS nuance: the SSL certificate for CloudFront must be in `us-east-1`."
-
-### Troubleshooting & Real-World Challenges
-
-> "I handled delays in DNS propagation and CloudFront deployments, and ensured correct IAM policies between services."
-
-### Cost-Effectiveness (Serverless)
-
-> "This serverless architecture is very cost-effective. Most usage remains within AWS Free Tier limits, especially for static sites."
-
----
-
 ## 🛣️ Future Enhancements
 
 - Implement CI/CD pipeline (e.g., GitHub Actions, CodePipeline/CodeBuild) for automatic deployment.
